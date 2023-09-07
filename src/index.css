@@ -11,3 +11,334 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.header{
+  /* background-color: black; */
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 15px 30px; */
+  box-shadow: rgba(101, 98, 252, 0.505) 0px 3px 8px;
+  /* text-align: center; */
+  border-bottom: 4px solid blue;
+  /* position: sticky; */
+  top: 0;
+  /* backdrop-filter: blur(10px) ; */
+}
+.clLogo{
+  width: 70px;
+}
+.siLogo{
+  height: 70px;
+}
+.curr{
+  /* background-color: darkturquoise; */
+  padding: 20px 60px;
+  border-radius: 15px;
+  width: 600px;
+  /* background: linear-gradient( blue,rgb(4, 4, 119)); */
+  background-color: #00509d;
+  background: linear-gradient(#014a8f,#00509d);
+  color: white;
+  min-height: 60%;
+  /* text-decoration: line-through; */
+  /* text-align: center; */
+}
+.next{
+  /* justify-content: flex-start !important; */
+  padding: 20px 40px;
+  /* transform: scale(0.8); */
+  border-radius: 15px;
+  /* border: 3px solid blue; */
+  min-height: 60%;
+  background-color: #fdc500;
+}
+
+.theme{
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.tTitle{
+  font-size: 2.5rem;
+  /* font-weight: 100; */
+  background-size: cover;
+  overflow: visible;
+  padding: 10px 75px;
+  padding-top: 15px;
+  color: #fdc500;
+}
+.TeamsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 100%;
+  min-height: 600px;
+  min-width: 1200px;
+  
+  margin: 0px auto;
+}
+.eTitle{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #00509d;
+  /* margin-top: 50px; */
+  margin-bottom: -50px;
+  
+}
+.eTitle h2{
+  font-weight: 100;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tTitle{
+  color: #00509d;
+}
+.App {
+  /* text-align: center;   */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  height: 100vh;
+}
+.totalCnt{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.mNxt:hover{
+  background-color: #fdc500 !important;
+  color: black !important;
+  cursor: pointer;
+}
+
+.cTname{
+  margin-top:-15px;
+  letter-spacing:-3px; 
+  font-weight:100;
+  font-size:3.2rem;
+  text-transform:uppercase
+}
+
+.cTtitle{
+  margin-top:30px;
+  font-size :50px;
+  letter-spacing:-3px
+}
+
+.StudentList{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  /* background-color: yellow; */
+  background-color: rgb(209, 209, 209);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.stuID{
+  width: 190px;
+}
+.teamID{
+  font-size: 1.5rem;
+  /* font-style: italic; */
+  /* font-weight: 900; */
+  font-family: monospace;
+}
+.stuTeam{
+  width: 150px;
+}
+.stuTheme{
+  width: 250px;
+}
+.StudentsWrapper{
+  width: 100%;
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  
+}
+
+.footer{
+  width: 100%;
+  background-color: #014a8f;
+  color: white;
+  height: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Ctrl{
+  background-color: #fdc500;
+  padding: 15px 20px;
+  padding-top: 30px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius:  0px 0px 10px 10px;
+}
+button{
+  border: none;
+  background-color: #00509d;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.nxtBtn:hover{
+  background-color: #062746;
+}
+.hov:hover{
+  color: white !important;
+  background-color: green !important;
+  cursor: pointer !important;
+}
+.currE{
+    background-color:red;
+    padding:5px 10px;
+    color:white;
+    border-radius:5px;
+}
+
+@media  (max-width:700px){
+  .cTtitle{
+    font-size: 1rem;
+    letter-spacing: -1px;
+  }
+  .cTname{
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+  .tTitle{
+    font-size: 2rem;
+    padding: 5px;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  .StudentsWrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0px 5px;
+  }
+  .hTitle{
+    color: blue;
+    font-size: 1rem;
+  }
+  .dTitle{
+    font-size: 0.7rem;
+  }
+  .clLogo{
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+    margin-right: 20px;
+  }
+  .eTitle h2{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: -1px;
+  }
+  .next{
+    /* justify-content: flex-start !important; */
+    padding: 0px 20px;
+    /* transform: scale(0.8); */
+    width: 90vw;
+    border-radius: 15px;
+    border: 3px solid blue;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .siLogo{
+    /* margin-left: -20px; */
+    margin-right: 20px;
+    height: 50px;
+  }
+  .TeamsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+    min-width: auto;
+    flex-direction: column;
+    max-width: none;
+    margin: 10px 5px;
+  }
+  .App {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-wrap: nowrap;
+    align-content: center;
+
+}
+  .curr{
+    /* background-color: darkturquoise; */
+    padding: 5px 20px;
+    width: 90vw;
+    border-radius: 15px;
+    margin-top: -30px;
+    /* background: linear-gradient( blue,rgb(4, 4, 119)); */
+    color: white;
+    /* margin-bottom: 20px; */
+  }
+  .stuID{
+    width: 75px;
+    font-size: 0.7rem;
+  }
+  .sts{
+    font-size: 0.7rem;
+  }
+  .stuTeam{
+    width:85px;
+    font-size: 0.8rem;
+  }
+  .stuTheme{
+    width: 80px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+  }
+  .StudentList{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 13px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .currE{
+    padding: 5px 5px !important;
+  }
+  
+}
+
+
+
