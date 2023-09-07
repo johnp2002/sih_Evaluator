@@ -46,6 +46,7 @@ code {
   background: linear-gradient(#014a8f,#00509d);
   color: white;
   min-height: 60%;
+  max-width: 400px;
   /* text-decoration: line-through; */
   /* text-align: center; */
 }
@@ -57,6 +58,7 @@ code {
   /* border: 3px solid blue; */
   min-height: 60%;
   background-color: #fdc500;
+  max-width: 400px;
 }
 
 .theme{
@@ -283,7 +285,7 @@ button{
     height: 100%;
     margin-top: 10px;
     min-width: auto;
-    flex-direction: column;
+    flex-direction: row;
     max-width: none;
     margin: 10px 5px;
   }
@@ -308,19 +310,29 @@ button{
     /* margin-bottom: 20px; */
   }
   .stuID{
-    width: 75px;
+    width: 60px;
     font-size: 0.7rem;
+    /* text-overflow: clip; */
+    word-break: break-all;
+    margin-right: 5px;
   }
   .sts{
     font-size: 0.7rem;
+    word-break: break-all;
+    width: 50px;
+    font-style: italic;
   }
   .stuTeam{
     width:85px;
     font-size: 0.8rem;
+    word-break: break-all;
+
   }
   .stuTheme{
+    word-break: break-all;
+
     width: 80px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left: 5px;
   }
   .StudentList{
