@@ -342,7 +342,7 @@ button{
     justify-content: space-between;
     align-items: center;
     padding: 0px 13px;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-bottom: 10px;
     border-radius: 10px;
   }
