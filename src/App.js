@@ -24,14 +24,13 @@ import { doc, setDoc } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCkNWjkhDLQVSxCt_m0p_IEAtprarC8lkA",
-  authDomain: "temp-3c88e.firebaseapp.com",
-  projectId: "temp-3c88e",
-  storageBucket: "temp-3c88e.appspot.com",
-  messagingSenderId: "89367211632",
-  appId: "1:89367211632:web:670a7224a29094575b0eb5"
+  apiKey: "AIzaSyARvbFHOcJLK49iy5E5nQuGMa-DdZD0jxQ",
+  authDomain: "data-f5aa7.firebaseapp.com",
+  projectId: "data-f5aa7",
+  storageBucket: "data-f5aa7.appspot.com",
+  messagingSenderId: "797582477966",
+  appId: "1:797582477966:web:f88f70d3ff32ded60d57df"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
@@ -39,7 +38,7 @@ const firestore = getFirestore(app);
 
 
 
-function App() {
+function App(props) {
   const [data, setData] = useState([]);
   const [cnt,setCount] = useState(0);
   const [curr,setCurr] = useState(true);
@@ -109,7 +108,7 @@ function App() {
         ))}
       </ul> */}
       <div className='eTitle'>
-        <h2>Dept of CSE - Ideathon Round-1 Status</h2>
+        <h2>Dept of CSE - Ideathon Round-1 Status</h2> <button className='lBtn' onClick={()=>{props.enable(true)}}>Evaluator Login</button>
       </div>
         <div className='TeamsWrapper'>
         {curr && <h3 className='curr'>Current Team Not Yet Set!</h3>}

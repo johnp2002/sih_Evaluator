@@ -25,12 +25,12 @@ import { doc, updateDoc } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCkNWjkhDLQVSxCt_m0p_IEAtprarC8lkA",
-  authDomain: "temp-3c88e.firebaseapp.com",
-  projectId: "temp-3c88e",
-  storageBucket: "temp-3c88e.appspot.com",
-  messagingSenderId: "89367211632",
-  appId: "1:89367211632:web:670a7224a29094575b0eb5"
+  apiKey: "AIzaSyARvbFHOcJLK49iy5E5nQuGMa-DdZD0jxQ",
+  authDomain: "data-f5aa7.firebaseapp.com",
+  projectId: "data-f5aa7",
+  storageBucket: "data-f5aa7.appspot.com",
+  messagingSenderId: "797582477966",
+  appId: "1:797582477966:web:f88f70d3ff32ded60d57df"
 };
 
 // Initialize Firebase
@@ -40,7 +40,7 @@ const firestore = getFirestore(app);
 
 
 
-function Evaulator() {
+function Evaulator(props) {
   const [data, setData] = useState([]);
   const [cnt,setCount] = useState(0);
   const [curr,setCurr] = useState(true);
@@ -51,7 +51,7 @@ function Evaulator() {
     color:'white',
     backgroundColor:"green"
   }
-  
+  props.disable(false)
   
 
   useEffect(() => {
